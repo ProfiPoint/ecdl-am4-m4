@@ -1,0 +1,169 @@
+V databázovém kontextu v Excelu jsou k dispozici některé funkce, které umožňují provádět výpočty na základě podmínek v rámci rozsáhlých tabulek nebo databází. Níže jsou uvedeny některé z těchto funkcí spolu s jejich popisem a parametry:
+
+1. **SUMIF:**
+   - **Popis:** Sčítá hodnoty v zadaném rozsahu na základě určitého kritéria.
+   - **Parametry:**
+     - `range`: Rozsah hodnot, který bude vyhodnocen.
+     - `criteria`: Podmínka, kterou musí hodnoty splňovat, aby byly zahrnuty do sčítání.
+     - `sum_range` (volitelný): Rozsah hodnot, které budou sčítány. Pokud není zadán, použije se `range` pro sčítání.
+
+   **Příklad:**
+   ```excel
+   =SUMIF(A2:A10, ">10", B2:B10)
+   ```
+
+2. **COUNTIF:**
+   - **Popis:** Počítá počet buněk v zadaném rozsahu, které splňují určité kritérium.
+   - **Parametry:**
+     - `range`: Rozsah hodnot, který bude vyhodnocen.
+     - `criteria`: Podmínka, kterou musí hodnoty splňovat, aby byly zahrnuty do počítání.
+
+   **Příklad:**
+   ```excel
+   =COUNTIF(A2:A10, ">=50")
+   ```
+
+3. **AVERAGEIF:**
+   - **Popis:** Spočítá průměr hodnot v zadaném rozsahu na základě určitého kritéria.
+   - **Parametry:**
+     - `range`: Rozsah hodnot, který bude vyhodnocen.
+     - `criteria`: Podmínka, kterou musí hodnoty splňovat, aby byly zahrnuty do výpočtu průměru.
+     - `average_range` (volitelný): Rozsah hodnot, ze kterého budou počítány průměry. Pokud není zadán, použije se `range` pro průměr.
+
+   **Příklad:**
+   ```excel
+   =AVERAGEIF(B2:B10, ">3")
+   ```
+
+4. **DMAX:**
+   - **Popis:** Vrací největší hodnotu v databázi nebo rozsahu, která splňuje zadané kritérium.
+   - **Parametry:**
+     - `database`: Rozsah, který obsahuje databázi.
+     - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+     - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+   **Příklad:**
+   ```excel
+   =DMAX(A1:C100, "Salary", A101:B102)
+   ```
+
+5. **DMIN:**
+   - **Popis:** Vrací nejmenší hodnotu v databázi nebo rozsahu, která splňuje zadané kritérium.
+   - **Parametry:**
+     - `database`: Rozsah, který obsahuje databázi.
+     - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+     - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+   **Příklad:**
+   ```excel
+   =DMIN(A1:C100, "Price", A101:B102)
+   ```
+
+6. **DAVERAGE:**
+   - **Popis:** Vrací průměr hodnot ve vybraném poli záznamů, které splňují zadané kritérium.
+   - **Parametry:**
+     - `database`: Rozsah, který obsahuje databázi.
+     - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+     - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+   **Příklad:**
+   ```excel
+   =DAVERAGE(A1:C100, "Salary", A101:B102)
+   ```
+
+7. **DSUM:**
+   - **Popis:** Sčítá hodnoty ve vybraném poli záznamů, které splňují zadané kritérium.
+   - **Parametry:**
+     - `database`: Rozsah, který obsahuje databázi.
+     - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+     - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+   **Příklad:**
+   ```excel
+   =DSUM(A1:C100, "Sales", A101:B102)
+   ```
+
+8. **DCOUNT:**
+   - **Popis:** Počítá počet záznamů ve vybraném poli, které splňují zadané kritérium.
+   - **Parametry:**
+     - `database`: Rozsah, který obsahuje databázi.
+     - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+     - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+   **Příklad:**
+   ```excel
+   =DCOUNT(A1:C100, "ProductID", A101:B102)
+   ```
+
+9. **DSTDEVP:**
+   - **Popis:** Vrací standardní odchylku hodnot ve vybraném poli záznamů, které splňují zadané kritérium.
+   - **Parametry:**
+     - `database`: Rozsah, který obsahuje databázi.
+     - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+     - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+   **Příklad:**
+   ```excel
+   =DSTDEVP(A1:C100, "Revenue", A101:B102)
+   ```
+
+10. **DPRODUCT:**
+    - **Popis:** Vrací součin hodnot ve vybraném poli záznamů, které splňují zadané kritérium.
+    - **Parametry:**
+      - `database`: Rozsah, který obsahuje databázi.
+      - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+      - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+    **Příklad:**
+    ```excel
+    =DPRODUCT(A1:C100, "Quantity", A101:B102)
+    ```
+
+11. **DVAR:**
+    - **Popis:** Vrací rozptyl hodnot ve vybraném poli záznamů, které splňují zadané kritérium.
+    - **Parametry:**
+      - `database`: Rozsah, který obsahuje databázi.
+      - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+      - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+    **Příklad:**
+    ```excel
+    =DVAR(A1:C100, "Amount", A101:B102)
+    ```
+
+12. **DSTDEV:**
+    - **Popis:** Vrací odchylku hodnot ve vybraném poli záznamů, které splňují zadané kritérium.
+    - **Parametry:**
+      - `database`: Rozsah, který obsahuje databázi.
+      - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+      - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+    **Příklad:**
+    ```excel
+    =DSTDEV(A1:C100, "Price", A101:B102)
+    ```
+
+13. **DGET:**
+    - **Popis:** Vrací jedinou hodnotu ze záznamů ve vybraném poli, které splňují zadané kritérium.
+    - **Parametry:**
+      - `database`: Rozsah, který obsahuje databázi.
+      - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+      - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+    **Příklad:**
+    ```excel
+    =DGET(A1:C100, "Name", A101:B102)
+    ```
+
+14. **DCOUNTA:**
+    - **Popis:** Počítá počet neprázdných buněk ve vybraném poli, které splňují zadané kritérium.
+    - **Parametry:**
+      - `database`: Rozsah, který obsahuje databázi.
+      - `field`: Sloupec, ve kterém se nachází hodnoty, na kterých se má operace provést.
+      - `criteria`: Rozsah, který obsahuje podmínky pro vyhodnocení.
+
+    **Příklad:**
+    ```excel
+    =DCOUNTA(A1:C100, "ProductID", A101:B102)
+    ```
+      
