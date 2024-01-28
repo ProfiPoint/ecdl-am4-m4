@@ -1,6 +1,7 @@
 V databázovém kontextu v Excelu jsou k dispozici některé funkce, které umožňují provádět výpočty na základě podmínek v rámci rozsáhlých tabulek nebo databází. Níže jsou uvedeny některé z těchto funkcí spolu s jejich popisem a parametry:
 
 1. **SUMIF:**
+https://www.youtube.com/watch?v=7395LUP9dsk&ab_channel=Microsoft365
    - **Popis:** Sčítá hodnoty v zadaném rozsahu na základě určitého kritéria.
    - **Parametry:**
      - `range`: Rozsah hodnot, který bude vyhodnocen.
@@ -46,7 +47,7 @@ V databázovém kontextu v Excelu jsou k dispozici některé funkce, které umo�
    ```excel
    =DMAX(A1:C100, "Salary", A101:B102)
    ```
-
+=DMAX(A4:D31;D4;A1:D2)
 5. **DMIN:**
    - **Popis:** Vrací nejmenší hodnotu v databázi nebo rozsahu, která splňuje zadané kritérium.
    - **Parametry:**
