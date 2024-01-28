@@ -1,0 +1,3 @@
+Kód	Datum	Druh opravy	V termínu	USA	ČR	
+			Ano			AND NA ŘÁDEK
+747						OR NA VÍCE ŘÁDKŮ
