@@ -1,0 +1,1 @@
+=IFS(A(D8="Ano"; A8 >500);"A";D8="";"B";PRAVDA;"C")
